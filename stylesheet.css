@@ -1,0 +1,191 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(183, 183, 226);
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+/*header*/
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("../img/czacha.jpg");
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+/*ikona clear*/
+.clear i {
+  font-size: 30px;
+  color: rgb(40, 230, 65);
+}
+
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px, 3px, 5px, black;
+  transform: rotate(45deg);
+}
+
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/*content*/
+.content {
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  background-color: rgb(246, 241, 242);
+  overflow: auto;
+}
+
+.item {
+  width: 300px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgb(14, 2, 2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*plus mark*/
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+
+.item i.co:hover {
+  cursor: pointer;
+}
+.fas-check-circle {
+  color: #6eb200;
+}
+
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 5px;
+  top: 5px;
+  background-color: #fff;
+  max-width: 150px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.de {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+
+/*add item */
+.add-to-do {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  background-color: rgb(236, 234, 234);
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #070507;
+}
+
+.add-to-do input {
+  position: absolute;
+  left: 50px;
+  height: 35px;
+  width: 310px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.add-to-do input::-webkit-input-placeholder {
+  color: #0935f7;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+
+/* ul {
+  margin: 10;
+  padding: 10;
+}
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  /* user-select: none; */
+/* }
+
+ul li:nth-child(odd) {
+  background: gray;
+}
+
+ul li.checked {
+  background: white;
+  color: red;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: " ";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/*delete button*/
+/* .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }   */
